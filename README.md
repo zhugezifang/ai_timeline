@@ -7,3 +7,5 @@
 Github AI时间线：
 
 ![image](github.jpeg)
+
+代码比较混乱，主要实现业务逻辑，各位轻拍
