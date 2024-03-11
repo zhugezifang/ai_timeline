@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Example</title>
+    <script>
+        let socket = new WebSocket("ws://localhost:8080/websocket");
+        let heartbeatInterval;
+
+        // 当 WebSocket 连接打开时执行
+        socket.onopen = function(event) {
+            console.log("WebSocket is open.");
+            startHeartbeat(); // 开始心跳
+        };
+
+        // 当收到消息时执行
+        socket.onmessage = function(event) {
+            console.log("Received message: " + event.data);
+            // 在此处理接收到的消息
+        };
+
+        // 发送心跳消息
+        function sendHeartbeat() {
+            console.log("Sending heartbeat...");
+            socket.send("heartbeat");
+        }
+
+        // 开始心跳定时器
+        function startHeartbeat() {
+            heartbeatInterval = setInterval(sendHeartbeat, 5000); // 每5秒发送一次心跳
+        }
+
+        // 当 WebSocket 连接关闭时执行
+        socket.onclose = function(event) {
+            console.log("WebSocket is closed.");
+            clearInterval(heartbeatInterval); // 清除心跳定时器
+        };
+        function sendMessage() {
+            let message = document.getElementById("message").value;
+            socket.send(message);
+        }
+    </script>
+</head>
+<body>
+<input type="text" id="message" placeholder="Type a message..."> <!-- 输入框，用于输入消息 -->
+<button onclick="sendMessage()">Send</button> <!-- 发送按钮，调用sendMessage函数发送消息 -->
+</body>
+</html>

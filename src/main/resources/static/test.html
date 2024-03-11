@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <title>AI时间线</title>
+    <meta name="keywords" content="AI时间线，AI，ChatGPT，时间线，timeline，时间轴，免费在线工具，时间轴图，时间线工具，时间线在线绘制工具，时间轴图，思维导图, 思维导图软件, 思维导图工具"/>
+    <meta name="description" content="AI时间线是一个基于AI将某个事件以时间线的方式产出的AI网站"/>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .site-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+        }
+        main {
+            flex: 1;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            width: 100%;
+            flex-grow: 1; /* Ensures the container can grow to fill the space */
+        }
+        .input-group {
+            margin-top: 20px;
+            display: flex;
+        }
+        .input-group input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            margin-right: 5px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+        }
+        .input-group button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .input-group button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+        img:hover {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="site-container">
+
+    <header>
+        <h1>AI时间线</h1> <a style="float: right;color: white;margin-top: -50px;margin-right: 20px" href="http://a6t.cn/GIsrQ" target="_blank">使用教程</a>
+    </header>
+
+    <main style="margin-top:60px;">
+        <div class="container">
+            <div class="input-group" style="position:relative;">
+                <!-- 输入框 -->
+                <div style="width:210px;margin:auto;">
+                    <input type="text" id="myInput" width="100px" placeholder="请输入关键词">
+                </div>
+
+            </div>
+            <div class="input-group" style="position:relative;">
+                <!-- 提交按钮 -->
+                <button id="bt" type="button" style="margin:auto" onclick="sendMessage()">生成</button>
+            </div>
+            <div style="margin-top:5px;text-align: center;">
+                <a href="https://baoyueai.com/?utm_id=216186" target="_blank"><img src="img/by_ai.jpeg" style="width: 350px;" border="2px" /></a>
+                <!--<iframe
+                        id="timeline-frame"
+                        title="Inline Frame Example"
+                        width="1100"
+                        border="0"
+                        height="250"
+                        src="">
+                </iframe>-->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><a href="https://docs.qq.com/doc/DZVpIQUpVd1Rvdm5n" target="_blank" style="color:white;">这网站怎么做的</a>&nbsp;|&nbsp;<a href="https://www.ai-code.online" target="_blank" style="color:white;">AI好物</a></p>
+        <span style="color: #8c8c8c;font-size: 12px">鄂ICP备2024037454号-2</span>
+        <input type="hidden" id="ipInput" th:value="${ip}" />
+    </footer>
+
+</div>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+-->
+<script>
+    var ip="ip";
+
+    let socket = new WebSocket("ws://"+ip+":80/websocket");
+    let heartbeatInterval;
+
+    // 当 WebSocket 连接打开时执行
+    socket.onopen = function(event) {
+        console.log("WebSocket is open.");
+        startHeartbeat(); // 开始心跳
+    };
+
+    // 当收到消息时执行
+    socket.onmessage = function(event) {
+        console.log("Received message: " + event.data);
+        if (event.data=="limit"){
+            alert("您今日的使用次数已达上限，请查看使用教程解决")
+        }else {
+            window.location.href="/timeline?name="+event.data;
+        }
+        // 在此处理接收到的消息
+    };
+
+    // 发送心跳消息
+    function sendHeartbeat() {
+        console.log("Sending heartbeat...");
+        socket.send("heartbeat");
+    }
+
+    // 开始心跳定时器
+    function startHeartbeat() {
+        //heartbeatInterval = setInterval(sendHeartbeat, 5000); // 每5秒发送一次心跳
+    }
+
+    // 当 WebSocket 连接关闭时执行
+    socket.onclose = function(event) {
+        console.log("WebSocket is closed.");
+        //clearInterval(heartbeatInterval); // 清除心跳定时器
+    };
+    function sendMessage() {
+        // 从文本框中获取消息并发送给后端
+        //$("#timeline-frame").attr("src","https://baoyueai.com/?utm_id=210554");
+        //window.open("https://baoyueai.com/?utm_id=210554",'_blank');
+        console.log("生成中");
+        $("#bt").text("生成中");
+        let message = document.getElementById('myInput').value;
+        var clientIp=$("#ipInput").val();
+        console.log(clientIp);
+
+        var str = {"ip":clientIp, "msg":message}
+        msg_info = JSON.stringify(str)
+
+        socket.send(msg_info);
+    }
+</script>
+
+<script>
+    //百度统计
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?###";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4E2CHZDBEY"></script>
+<script>
+    //谷歌统计
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '###');
+</script>
+
+
+</body>
+</html>
