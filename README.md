@@ -1,1 +1,9 @@
-nohup java -jar websocket-0.0.1-SNAPSHOT.jar >info8.log 2>&1 &
+产品介绍： AI时间线
+
+产品地址： http://www.ai-timeline.top
+
+使用教程：使用教程可以看右上角“使用教程”
+
+Github AI时间线：
+
+![image](github.jpeg)
