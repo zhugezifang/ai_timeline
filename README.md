@@ -8,4 +8,8 @@ Github AI时间线：
 
 ![image](github.jpeg)
 
+产品和代码解析：
+
+https://note.mowen.cn/note/detail?noteUuid=RGXfh4tOmCk7COzDakmsE
+
 代码比较混乱，主要实现业务逻辑，各位轻拍哈
