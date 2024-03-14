@@ -8,9 +8,14 @@ Github AI时间线：
 
 ![image](github.jpeg)
 
-产品和代码解析：
+AI时间线开发、变现、运营历程分享：
 
-https://note.mowen.cn/note/detail?noteUuid=RGXfh4tOmCk7COzDakmsE
+https://note.mowen.cn/note/detail?noteUuid=mfcz25BdfCb895Hk31Lsl
+
+技术篇：https://note.mowen.cn/note/detail?noteUuid=RGXfh4tOmCk7COzDakmsE
+
+商业篇：https://note.mowen.cn/note/detail?noteUuid=Msqnuz5c4B_bOF3AETdzc
+
 
 代码比较混乱，主要实现业务逻辑，各位轻拍哈
 
