@@ -16,6 +16,8 @@ https://note.mowen.cn/note/detail?noteUuid=mfcz25BdfCb895Hk31Lsl
 
 商业篇：https://note.mowen.cn/note/detail?noteUuid=Msqnuz5c4B_bOF3AETdzc
 
+营销篇：https://note.mowen.cn/note/detail?noteUuid=KQE4YSMmMb2ybj4yJmKEQ
+
 
 代码比较混乱，主要实现业务逻辑，各位轻拍哈
 
