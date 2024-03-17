@@ -22,3 +22,11 @@ https://note.mowen.cn/note/detail?noteUuid=mfcz25BdfCb895Hk31Lsl
 代码比较混乱，主要实现业务逻辑，各位轻拍哈
 
 **商业化使用请注明出处**
+
+交流群和联系方式(备注AI时间线)
+
+![image](https://github.com/zhugezifang/ai_timeline/assets/28300167/fb2a1d78-76eb-472a-bdb3-d0e0b3366760)
+
+![image](https://github.com/zhugezifang/ai_timeline/assets/28300167/18f81a23-0534-4309-88ed-457c5864806d)
+
+
