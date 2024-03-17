@@ -25,8 +25,8 @@ https://note.mowen.cn/note/detail?noteUuid=mfcz25BdfCb895Hk31Lsl
 
 交流群和联系方式(备注AI时间线)
 
-![image](https://github.com/zhugezifang/ai_timeline/assets/28300167/fb2a1d78-76eb-472a-bdb3-d0e0b3366760)
+![image](https://github.com/zhugezifang/ai_timeline/assets/28300167/fb2a1d78-76eb-472a-bdb3-d0e0b3366760 =100x100)
 
-![image](https://github.com/zhugezifang/ai_timeline/assets/28300167/18f81a23-0534-4309-88ed-457c5864806d)
+![image](https://github.com/zhugezifang/ai_timeline/assets/28300167/18f81a23-0534-4309-88ed-457c5864806d =100x100)
 
 
