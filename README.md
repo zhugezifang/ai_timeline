@@ -27,7 +27,6 @@ https://note.mowen.cn/note/detail?noteUuid=mfcz25BdfCb895Hk31Lsl
 
 ![image](https://github.com/zhugezifang/ai_timeline/assets/28300167/18f81a23-0534-4309-88ed-457c5864806d)
 
-![image](https://github.com/zhugezifang/ai_timeline/assets/28300167/fb2a1d78-76eb-472a-bdb3-d0e0b3366760)
 
 
 
