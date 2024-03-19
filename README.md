@@ -23,6 +23,8 @@ https://note.mowen.cn/note/detail?noteUuid=mfcz25BdfCb895Hk31Lsl
 
 **商业化使用请注明出处**
 
+twitter: https://twitter.com/zhugezifang
+
 交流群和联系方式(备注AI时间线)
 
 ![image](https://github.com/zhugezifang/ai_timeline/assets/28300167/18f81a23-0534-4309-88ed-457c5864806d)
