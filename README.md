@@ -20,6 +20,8 @@ https://note.mowen.cn/note/detail?noteUuid=mfcz25BdfCb895Hk31Lsl
 
 流量篇：https://note.mowen.cn/note/detail?noteUuid=EKtHKDVXTMd2uneqXh3Z2
 
+数据篇：https://note.mowen.cn/note/detail?noteUuid=hubT310cbkk2UQz76Brnl
+
 
 代码比较混乱，主要实现业务逻辑，各位轻拍哈
 
