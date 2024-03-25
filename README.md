@@ -31,10 +31,6 @@ AI时间线开发、变现、运营历程分享：
 
 twitter: https://twitter.com/zhugezifang
 
-交流群和联系方式(备注AI时间线)
-
-![image](https://github.com/zhugezifang/ai_timeline/assets/28300167/18f81a23-0534-4309-88ed-457c5864806d)
-
 
 
 
