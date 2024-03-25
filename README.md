@@ -12,7 +12,7 @@ AI时间线开发、变现、运营历程分享：
 
 **创业篇：https://zhuanlan.zhihu.com/p/688823353**
 
-https://note.mowen.cn/note/detail?noteUuid=mfcz25BdfCb895Hk31Lsl
+整体历程：https://note.mowen.cn/note/detail?noteUuid=mfcz25BdfCb895Hk31Lsl
 
 技术篇：https://note.mowen.cn/note/detail?noteUuid=RGXfh4tOmCk7COzDakmsE
 
